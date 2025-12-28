@@ -1,103 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nisha — portfolio showcasing projects, skills, and contact information." />
   <title>Nisha | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
   <header>
-    <nav class="navbar">
-      <h2 class="logo">Nisha</h2>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">Nisha</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1>Hello, I'm <span>Nisha</span></h1>
-    <p>Tech Enthusiast</p>
-    <a href="#contact" class="btn">Hire Me</a>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate professional with experience in education, beauty services,
-      and web development. I enjoy learning new technologies and creating simple,
-      effective solutions.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section light">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Node.js</div>
-      <div class="skill">Teaching</div>
-      <div class="skill">Beautician</div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
-
-  <div class="projects">
-
-    <div class="card">
-      <h3>Academic Timetable Generation System</h3>
-      <p>Web application to generate conflict-free academic timetables.</p>
-      <div class="project-links">
-        <a href="https://github.com/NishaGNB/Academic-Timetable-Generation-System" target="_blank">
-          GitHub
-        </a>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Nisha</span></h1>
+          <p class="lead">I build thoughtful web experiences and education tools.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="projects.html">View Projects</a>
+            <a class="btn ghost" href="contact.html">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="d:\Picture\Nisss\IMG_7465.JPG" alt="hero art">
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="card">
-      <h3>Automatic Question Paper Generation V2</h3>
-      <p>
-        An intelligent tool that instantly generates well-structured, balanced, papers, saving teachers time and ensuring
-        high-quality assessments.
-      </p>
-      <div class="project-links">
-        <a href="https://github.com/NishaGNB/Automatic-Question-Paper-Generator-Version-2" target="_blank">
-          GitHub
-        </a>
+    <section class="section intro">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="muted">I combine a background in education and beauty services with a passion for web development — crafting tools that help people and teams be more effective.</p>
+        <div class="quick-list">
+          <div><strong>Skills</strong><br>HTML • CSS • JavaScript • Node.js</div>
+          <div><strong>Focus</strong><br>Education apps, tooling, UI</div>
+          <div><strong>Location</strong><br>India</div>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <section class="section featured">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects">
+          <article class="card">
+            <h3>Academic Timetable Generator</h3>
+            <p>Web app to generate conflict-free timetables for schools and colleges.</p>
+            <a class="link" href="https://github.com/NishaGNB/Academic-Timetable-Generation-System" target="_blank">View on GitHub →</a>
+          </article>
 
-
-  <!-- Contact -->
-  <section id="contact" class="section light">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
-  </section>
+          <article class="card">
+            <h3>Question Paper Generator V2</h3>
+            <p>An intelligent tool for fast, balanced question-paper creation.</p>
+            <a class="link" href="https://github.com/NishaGNB/Automatic-Question-Paper-Generator-Version-2" target="_blank">View on GitHub →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Nisha. All rights reserved.</p>
+    <div class="container">
+      <p>© 2025 Nisha. <a href="https://github.com/NishaGNB" target="_blank">GitHub</a> • <a href="mailto:hello@nisha.example">Email</a></p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
